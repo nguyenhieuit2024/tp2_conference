@@ -20,3 +20,12 @@ It provides APIs for creating and managing conferences, handling topic tracks, a
 # TP2 – Conference Manager (Flask Backend)
 
 Project hoàn chỉnh với file Postman để test API.
+---
+
+##  Postman Test Result
+
+Below is an example of a successful API test using Postman (creating a conference):
+
+![Postman Test Result](assets/postman_result.png)
+
+> The response confirms that the Flask API for Conference creation works correctly.
