@@ -21,11 +21,13 @@ It provides APIs for creating and managing conferences, handling topic tracks, a
 
 Project hoàn chỉnh với file Postman để test API.
 ---
+---
 
-##  Postman Test Result
+## Postman Test Result
 
-Below is an example of a successful API test using Postman (creating a conference):
+Example of a successful API request using Postman (creating a conference):
 
 ![Postman Test Result](assets/postman_result.png)
 
-> The response confirms that the Flask API for Conference creation works correctly.
+> Status: 200 OK — The API successfully created a conference entry in the database.
+
