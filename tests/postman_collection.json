@@ -1,0 +1,82 @@
+{
+    "info": {
+        "name": "TP2 Conference API Test",
+        "_postman_id": "abc12345",
+        "description": "Collection test API cho module TP2 - Conference Manager",
+        "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+    },
+    "item": [
+        {
+            "name": "Create Conference",
+            "request": {
+                "method": "POST",
+                "header": [
+                    {
+                        "key": "Content-Type",
+                        "value": "application/json"
+                    }
+                ],
+                "body": {
+                    "mode": "raw",
+                    "raw": "{\n    \"name\": \"ICAI 2025\",\n    \"start_date\": \"2025-03-01T00:00:00\",\n    \"end_date\": \"2025-05-01T00:00:00\",\n    \"submission_deadline\": \"2025-04-01T00:00:00\",\n    \"description\": \"International Conference on AI\"\n}"
+                },
+                "url": {
+                    "raw": "http://127.0.0.1:5000/conference",
+                    "protocol": "http",
+                    "host": [
+                        "127.0.0.1"
+                    ],
+                    "port": "5000",
+                    "path": [
+                        "conference"
+                    ]
+                }
+            }
+        },
+        {
+            "name": "Get Active Conferences",
+            "request": {
+                "method": "GET",
+                "url": {
+                    "raw": "http://127.0.0.1:5000/conference/active",
+                    "protocol": "http",
+                    "host": [
+                        "127.0.0.1"
+                    ],
+                    "port": "5000",
+                    "path": [
+                        "conference",
+                        "active"
+                    ]
+                }
+            }
+        },
+        {
+            "name": "Create Track",
+            "request": {
+                "method": "POST",
+                "header": [
+                    {
+                        "key": "Content-Type",
+                        "value": "application/json"
+                    }
+                ],
+                "body": {
+                    "mode": "raw",
+                    "raw": "{\n    \"name\": \"Machine Learning\",\n    \"conference_id\": 1\n}"
+                },
+                "url": {
+                    "raw": "http://127.0.0.1:5000/track",
+                    "protocol": "http",
+                    "host": [
+                        "127.0.0.1"
+                    ],
+                    "port": "5000",
+                    "path": [
+                        "track"
+                    ]
+                }
+            }
+        }
+    ]
+}
