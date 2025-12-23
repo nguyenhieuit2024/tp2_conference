@@ -21,8 +21,6 @@ It provides APIs for creating and managing conferences, handling topic tracks, a
 
 Project hoàn chỉnh với file Postman để test API.
 ---
----
-
 ## Postman Test Result
 
 Example of a successful API request using Postman (creating a conference):
